@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-table-cell{
+    text-align: center;
+    background-color: #28272E;
+    color: white;
+}
+.ant-table-cell-row-hover{
+    background: none !important;
+}
