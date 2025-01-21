@@ -28,6 +28,15 @@ module.exports = [
       },
     },
   },
+  
+  {
+    test: /\.scss$/,
+    use: [
+      'style-loader', // Injects styles into DOM
+      'css-loader',   // Resolves CSS imports
+      'sass-loader',  // Compiles SCSS to CSS
+    ],
+  },
 
   {
     // loads .css files
@@ -52,3 +61,4 @@ module.exports = [
    * }
    */
 ];
+

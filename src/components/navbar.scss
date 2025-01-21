@@ -1,0 +1,40 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 710px;
+    width: 112px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    background-color: #1E1C27;
+    border-radius: 100px;
+  }
+  
+  .status, .content, .pricing, .users, .statistics, .settings {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    
+    position: relative;
+  
+    .nav-icon {
+      width: 32px;
+      height: 32px;
+      background-color: transparent;
+    }
+  
+    
+    &.active::after {
+      content: '';  
+      position: absolute;
+      right: 0;
+      height: 50%;  
+      width: 4px;   
+      background-color: red;  
+      border-radius: 100px;
+    }
+  }
+  
